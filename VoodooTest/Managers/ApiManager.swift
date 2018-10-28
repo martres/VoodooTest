@@ -21,12 +21,7 @@ final class ApiManager: NSObject {
     }
         
     // MARK: AppTweak
-    
-    func mock() -> [Application] {
-        let app = [Application(), Application(), Application(), Application()]
-        return app
-    }
-    
+        
     func getBestApps(completion: @escaping ([Application]?, Error?) -> ()) {
         let cacheApps = dataManager.getApplications()
         completion(cacheApps, nil)
