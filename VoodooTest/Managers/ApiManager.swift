@@ -40,11 +40,10 @@ final class ApiManager: NSObject {
                 return
             }
             guard let appsDictionnaryArray = data[ConstantJSONKey.content] as? [[String: Any]] else { return }
-            var apps: [Application] = []
-            for dict in appsDictionnaryArray {
+            let apps: [Application] = appsDictionnaryArray.map {
                 let app = Application()
-                app.setupWith(dictionnary: dict)
-                apps.append(app)
+                app.setupWith(dictionnary: $0)
+                return app
             }
             DispatchQueue.main.async {
                 strongSelf.dataManager.deleteApps()
