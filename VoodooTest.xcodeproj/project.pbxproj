@@ -35,8 +35,8 @@
 		658D6E062185EE9900D1CDF6 /* TodayHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D6E042185EE9900D1CDF6 /* TodayHeaderCollectionReusableView.xib */; };
 		658D6E082185EEEB00D1CDF6 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D6E072185EEEB00D1CDF6 /* DateExtension.swift */; };
 		658D6E0B2186009C00D1CDF6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D6E0A2186009C00D1CDF6 /* TabBarViewController.swift */; };
-		658D6E0D218605F500D1CDF6 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D6E0C218605F500D1CDF6 /* ProfilViewController.swift */; };
 		658D6E1221860FDA00D1CDF6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D6E1121860FDA00D1CDF6 /* DataManager.swift */; };
+		65EB357F218629FA00D48B2C /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB357E218629FA00D48B2C /* ProfilViewController.swift */; };
 		9C2B0F32D46E8F70EC41DE8F /* Pods_VoodooTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03A33C6AF032124626BD0F7 /* Pods_VoodooTestUITests.framework */; };
 		C858C63E9887129549FB0DEE /* Pods_VoodooTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D77E966DB075FA3DC8D1E56 /* Pods_VoodooTestTests.framework */; };
 		F89BFB3BEA600F3D8318CE94 /* Pods_VoodooTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20865D9BF98A7480F3383BC /* Pods_VoodooTest.framework */; };
@@ -96,8 +96,8 @@
 		658D6E042185EE9900D1CDF6 /* TodayHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
 		658D6E072185EEEB00D1CDF6 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		658D6E0A2186009C00D1CDF6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		658D6E0C218605F500D1CDF6 /* ProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
 		658D6E1121860FDA00D1CDF6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		65EB357E218629FA00D48B2C /* ProfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfilViewController.swift; path = VoodooTest/UI/Profil/ProfilViewController.swift; sourceTree = SOURCE_ROOT; };
 		90B20CC522EE6DDF61E7FE29 /* Pods-VoodooTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoodooTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoodooTestTests/Pods-VoodooTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		94E7055E59007440ADE23BB6 /* Pods-VoodooTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoodooTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoodooTestUITests/Pods-VoodooTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9BB703EF17D53019A79969F0 /* Pods-VoodooTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoodooTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoodooTestUITests/Pods-VoodooTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -302,7 +302,7 @@
 		658D6E0E218605F900D1CDF6 /* Profil */ = {
 			isa = PBXGroup;
 			children = (
-				658D6E0C218605F500D1CDF6 /* ProfilViewController.swift */,
+				65EB357E218629FA00D48B2C /* ProfilViewController.swift */,
 			);
 			name = Profil;
 			path = "New Group";
@@ -573,7 +573,6 @@
 				658D6DFB217FCEFB00D1CDF6 /* UIViewControllerExtension.swift in Sources */,
 				658D6DD7217E4D8700D1CDF6 /* TodayDetailViewController.swift in Sources */,
 				658D6E0B2186009C00D1CDF6 /* TabBarViewController.swift in Sources */,
-				658D6E0D218605F500D1CDF6 /* ProfilViewController.swift in Sources */,
 				658D6DEE217F96DB00D1CDF6 /* TodayCell.swift in Sources */,
 				658D6DF5217FA41F00D1CDF6 /* ConstantJSONKey.swift in Sources */,
 				658D6DF8217FC95A00D1CDF6 /* DownloadImageView.swift in Sources */,
@@ -583,6 +582,7 @@
 				658D6DD9217E4D9600D1CDF6 /* TodayListViewModel.swift in Sources */,
 				658D6DFF2184A75300D1CDF6 /* TodayAnimator.swift in Sources */,
 				658D6DD5217E4D7800D1CDF6 /* TodayDetailViewModel.swift in Sources */,
+				65EB357F218629FA00D48B2C /* ProfilViewController.swift in Sources */,
 				658D6E1221860FDA00D1CDF6 /* DataManager.swift in Sources */,
 				658D6DDB217E4DA100D1CDF6 /* TodayListViewController.swift in Sources */,
 				658D6DA2217E393B00D1CDF6 /* AppDelegate.swift in Sources */,
