@@ -41,19 +41,16 @@ final class RequestManager: NSObject {
         request.allHTTPHeaderFields = basicHeaders()
         let task = session.dataTask(with: request, completionHandler: { (data, urlResponse, error) in
             guard error == nil else {
-                print("Request failed")
                 currentRequest.error = error
                 return
             }
             
             guard let data = data else {
-                print("Request failed")
                 return
             }
             
             do {
                 if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-                    print("Request success")
                     currentRequest.dataResult = json
                 }
             } catch let error {

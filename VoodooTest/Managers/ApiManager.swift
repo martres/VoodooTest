@@ -46,7 +46,6 @@ final class ApiManager: NSObject {
                 app.setupWith(dictionnary: dict)
                 apps.append(app)
             }
-            print("Apps Count : \(apps.count)")
             DispatchQueue.main.async {
                 strongSelf.dataManager.deleteApps()
                 strongSelf.dataManager.save(apps: apps)

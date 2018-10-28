@@ -72,7 +72,7 @@ final class TodayListViewModel: NSObject, TodayListViewModelInterface {
             do {
                 try reachability.startNotifier()
             } catch {
-                print("Error Reachability")
+                print(error)
             }
         }
     }

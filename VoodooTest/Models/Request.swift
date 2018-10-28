@@ -23,7 +23,6 @@ final class Request: NSObject {
     
     var error: Error? {
         didSet {
-            print("[Error] Request fail")
             resultCompletion?(nil, error)
         }
     }
